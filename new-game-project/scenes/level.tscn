@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://blf4tyvx3x3a3" path="res://assets/aseprite/tileset.png" id="1_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://cupyerhyeiyue" path="res://scenes/ball.tscn" id="2_w7c3h"]
+[ext_resource type="Script" uid="uid://cmxbudn1nfe1d" path="res://scenes/chute.gd" id="3_w8frs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w8frs"]
 texture = ExtResource("1_w7c3h")
@@ -50,6 +51,9 @@ texture = ExtResource("1_w7c3h")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_w8frs")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
+size = Vector2(12.857143, 148.57147)
+
 [node name="level" type="Node2D" unique_id=1630195181]
 scale = Vector2(0.7, 0.7)
 
@@ -64,4 +68,15 @@ scale = Vector2(0.7, 0.7)
 zoom = Vector2(3, 3)
 
 [node name="CharacterBody2D" parent="." unique_id=398377075 instance=ExtResource("2_w7c3h")]
-position = Vector2(44.28572, 118.571434)
+position = Vector2(100, 24.28572)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1115049614]
+script = ExtResource("3_w8frs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1517382452]
+position = Vector2(102.14284, 134.28569)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_mx8sn")
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_body_exited"]
