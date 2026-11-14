@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://blf4tyvx3x3a3" path="res://assets/aseprite/tileset.png" id="1_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://cupyerhyeiyue" path="res://scenes/ball.tscn" id="2_w7c3h"]
 [ext_resource type="Script" uid="uid://cmxbudn1nfe1d" path="res://scenes/chute.gd" id="3_w8frs"]
+[ext_resource type="Script" uid="uid://b1kphgnf5av3f" path="res://scenes/deathzone.gd" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://c8j40p6x1kf80" path="res://scenes/spring.tscn" id="5_ppgk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w8frs"]
 resource_name = "Normal"
@@ -121,7 +123,10 @@ sources/0 = SubResource("TileSetAtlasSource_w8frs")
 sources/1 = SubResource("TileSetAtlasSource_mx8sn")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
-size = Vector2(21.428596, 12.857056)
+size = Vector2(21.428596, 4.9999695)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xlqkt"]
+size = Vector2(45.714283, 8.571522)
 
 [node name="level" type="Node2D" unique_id=1630195181]
 scale = Vector2(0.7, 0.7)
@@ -137,15 +142,30 @@ scale = Vector2(0.7, 0.7)
 zoom = Vector2(3, 3)
 
 [node name="CharacterBody2D" parent="." unique_id=398377075 instance=ExtResource("2_w7c3h")]
-position = Vector2(100, 24.28572)
+position = Vector2(100, 147.14285)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1115049614]
 script = ExtResource("3_w8frs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1517382452]
-position = Vector2(100.71427, 206.4285)
-scale = Vector2(0.99999934, 0.99999934)
+position = Vector2(101.42859, 157.14287)
+scale = Vector2(0.9999992, 0.9999992)
 shape = SubResource("RectangleShape2D_mx8sn")
+
+[node name="deathzone" type="Area2D" parent="." unique_id=611288399]
+script = ExtResource("4_mx8sn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="deathzone" unique_id=1922275907]
+position = Vector2(-1.3623908e-06, 218.57135)
+scale = Vector2(0.9999996, 0.9999996)
+shape = SubResource("RectangleShape2D_xlqkt")
+
+[node name="spring" parent="." unique_id=949098351 instance=ExtResource("5_ppgk2")]
+modulate = Color(1, 1, 0.70980394, 1)
+texture_filter = 1
+position = Vector2(102.85714, 212.85715)
+scale = Vector2(0.80215275, 1.4346917)
 
 [connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_body_exited"]
+[connection signal="body_entered" from="deathzone" to="deathzone" method="_on_body_entered"]
