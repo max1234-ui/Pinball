@@ -13,6 +13,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -1000.0
+var speed = 1
 
 
 func _physics_process(delta: float) -> void:
@@ -25,12 +26,11 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		in_game = true
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		print(collision.get_collider().name)
+		#var tilemap = get_parent().find_child("TileMapLayer", true) as TileMapLayer
+		#var tilePos = tilemap.local_to_map(collision.get_collider())
+		#var data = tilemap.get_cell_tile_data(tilePos)
+		velocity = velocity.bounce(collision.get_normal()) * 0.8
