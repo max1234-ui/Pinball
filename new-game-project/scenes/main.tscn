@@ -1,16 +1,21 @@
 [gd_scene format=3 uid="uid://cf8880oauocta"]
 
 [ext_resource type="PackedScene" uid="uid://cupyerhyeiyue" path="res://scenes/ball.tscn" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://cmxbudn1nfe1d" path="res://scenes/chute.gd" id="2_0wfyh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xlqkt"]
-size = Vector2(74, 63)
+size = Vector2(225, 1195)
 
 [node name="main" type="Node2D" unique_id=102098318]
 
 [node name="CharacterBody2D" parent="." unique_id=398377075 instance=ExtResource("1_o5qli")]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1706901328]
+script = ExtResource("2_0wfyh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1794445451]
-position = Vector2(27, 21.5)
+position = Vector2(968.5, 1351.5)
 shape = SubResource("RectangleShape2D_xlqkt")
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]

@@ -1,9 +1,16 @@
 extends CharacterBody2D
 
+var is_in_chute = false
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	body.is_in_chute = true
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	body.is_in_chute = false
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var is_in_chute = false
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -11,7 +18,7 @@ func _physics_process(delta: float) -> void:
 		pass
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_in_chute():
+	if Input.is_action_just_pressed("ui_accept") and is_in_chute:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -23,13 +30,3 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	body.is_in_chute = true
-
-
-
-
-func _on_area_2d_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
