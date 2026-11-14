@@ -15,6 +15,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -1000.0
+const DEFAULT_BOUNCINESS = 0.0
 var speed = 1
 
 
@@ -25,8 +26,21 @@ func _physics_process(delta: float) -> void:
 		velocity.x += Input.get_axis("ui_left", "ui_right") * 600.0 * delta
 	velocity += get_gravity() * delta
 
-
+	# launching
+	if Input.is_action_just_pressed("ui_accept") and is_in_chute and not in_game:
+		velocity.y = JUMP_VELOCITY
+		in_game = true
+	
+	# bouncing
 	var collision = move_and_collide(velocity * delta)
 	if collision:
-		print(collision.get_collider().name)
-		velocity = velocity.bounce(collision.get_normal()) * 0.8
+		var collider = collision.get_collider()
+		var bounce = DEFAULT_BOUNCINESS
+		
+		if collider is TileMapLayer:
+			var tile_pos = collider.get_coords_for_body_rid(collision.get_collider_rid())
+			var data = collider.get_cell_tile_data(tile_pos)
+			if data:
+				bounce = data.get_custom_data("bounciness")
+				
+		velocity = velocity.bounce(collision.get_normal()) * bounce
