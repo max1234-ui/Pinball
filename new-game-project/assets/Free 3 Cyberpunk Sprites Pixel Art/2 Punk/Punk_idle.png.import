@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7r6e6owhko6u"
-path="res://.godot/imported/Punk_idle.png-66e6a7f5dd07c6b9152b804cdd93819b.ctex"
+path="res://.godot/imported/Punk_idle.png-b1d3b10980f3028cae8e6ac177917fcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_idle.png"
-dest_files=["res://.godot/imported/Punk_idle.png-66e6a7f5dd07c6b9152b804cdd93819b.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_idle.png"
+dest_files=["res://.godot/imported/Punk_idle.png-b1d3b10980f3028cae8e6ac177917fcf.ctex"]
 
 [params]
 

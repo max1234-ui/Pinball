@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctmg0s5p7d3gd"
-path="res://.godot/imported/Buildings 3.png-d5bede71aceb5ce260f3b71ace21ff4d.ctex"
+path="res://.godot/imported/Buildings 3.png-c9f3c39eaae9d3c40c13f56fdbe70c67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art - City Landscape V2/Pixel Art - City Landscape V2/Buildings 3.png"
-dest_files=["res://.godot/imported/Buildings 3.png-d5bede71aceb5ce260f3b71ace21ff4d.ctex"]
+source_file="res://assets/Pixel Art - City Landscape V2/Pixel Art - City Landscape V2/Buildings 3.png"
+dest_files=["res://.godot/imported/Buildings 3.png-c9f3c39eaae9d3c40c13f56fdbe70c67.ctex"]
 
 [params]
 

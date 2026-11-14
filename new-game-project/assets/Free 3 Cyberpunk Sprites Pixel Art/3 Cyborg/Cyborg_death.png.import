@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdy4l67jl5iqx"
-path="res://.godot/imported/Cyborg_death.png-be1d842b11919b78b2965be27911d3d9.ctex"
+path="res://.godot/imported/Cyborg_death.png-9849798f0f886b35e5f1a6b41b0ad90f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_death.png"
-dest_files=["res://.godot/imported/Cyborg_death.png-be1d842b11919b78b2965be27911d3d9.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_death.png"
+dest_files=["res://.godot/imported/Cyborg_death.png-9849798f0f886b35e5f1a6b41b0ad90f.ctex"]
 
 [params]
 

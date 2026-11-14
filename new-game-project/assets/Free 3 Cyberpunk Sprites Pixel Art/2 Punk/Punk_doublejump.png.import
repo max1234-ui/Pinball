@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv4ehlsq6jnbh"
-path="res://.godot/imported/Punk_doublejump.png-f37878cf89d0c18fd409a9163346be0f.ctex"
+path="res://.godot/imported/Punk_doublejump.png-49985b910b2fb0b99c3ed4bf604a5dcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_doublejump.png"
-dest_files=["res://.godot/imported/Punk_doublejump.png-f37878cf89d0c18fd409a9163346be0f.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_doublejump.png"
+dest_files=["res://.godot/imported/Punk_doublejump.png-49985b910b2fb0b99c3ed4bf604a5dcc.ctex"]
 
 [params]
 

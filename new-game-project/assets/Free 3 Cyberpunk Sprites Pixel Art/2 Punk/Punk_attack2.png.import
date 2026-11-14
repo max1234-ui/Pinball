@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qpmdal2bywcu"
-path="res://.godot/imported/Punk_attack2.png-67c8f8487b869a0ff9ae0fbd93f1ac3f.ctex"
+path="res://.godot/imported/Punk_attack2.png-dc64100089624fbd2f12e88206190e20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_attack2.png"
-dest_files=["res://.godot/imported/Punk_attack2.png-67c8f8487b869a0ff9ae0fbd93f1ac3f.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_attack2.png"
+dest_files=["res://.godot/imported/Punk_attack2.png-dc64100089624fbd2f12e88206190e20.ctex"]
 
 [params]
 

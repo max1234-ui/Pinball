@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b534laules5qt"
-path="res://.godot/imported/Trap.png-7161e46aff0a1a181f09246777d73bcc.ctex"
+path="res://.godot/imported/Trap.png-1a297a929c1ecb85f5a3f047dd9d5de1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Trap.png"
-dest_files=["res://.godot/imported/Trap.png-7161e46aff0a1a181f09246777d73bcc.ctex"]
+source_file="res://assets/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Trap.png"
+dest_files=["res://.godot/imported/Trap.png-1a297a929c1ecb85f5a3f047dd9d5de1.ctex"]
 
 [params]
 

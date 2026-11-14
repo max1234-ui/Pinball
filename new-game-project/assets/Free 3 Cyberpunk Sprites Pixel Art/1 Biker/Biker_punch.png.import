@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://26ys245krnt0"
-path="res://.godot/imported/Biker_punch.png-9bc1a088cb6d18f3463f68238377ce38.ctex"
+path="res://.godot/imported/Biker_punch.png-e2247640329687131a4c1b7986ccab2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_punch.png"
-dest_files=["res://.godot/imported/Biker_punch.png-9bc1a088cb6d18f3463f68238377ce38.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_punch.png"
+dest_files=["res://.godot/imported/Biker_punch.png-e2247640329687131a4c1b7986ccab2d.ctex"]
 
 [params]
 

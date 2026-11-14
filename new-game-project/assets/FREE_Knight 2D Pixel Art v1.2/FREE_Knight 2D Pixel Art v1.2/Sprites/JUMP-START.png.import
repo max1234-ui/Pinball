@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl8e3o5exnjfd"
-path="res://.godot/imported/JUMP-START.png-58d6739161832ceb1b078886a04ac35a.ctex"
+path="res://.godot/imported/JUMP-START.png-e1158ef68a4f642796f89efa145445b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/JUMP-START.png"
-dest_files=["res://.godot/imported/JUMP-START.png-58d6739161832ceb1b078886a04ac35a.ctex"]
+source_file="res://assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/JUMP-START.png"
+dest_files=["res://.godot/imported/JUMP-START.png-e1158ef68a4f642796f89efa145445b4.ctex"]
 
 [params]
 

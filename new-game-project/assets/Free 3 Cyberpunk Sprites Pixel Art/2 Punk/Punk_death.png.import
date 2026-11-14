@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwnt10km70xxi"
-path="res://.godot/imported/Punk_death.png-8cdff315a588b7d11d52533eceb10484.ctex"
+path="res://.godot/imported/Punk_death.png-d53f7e7cc652777124a2ecea9d0af50f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_death.png"
-dest_files=["res://.godot/imported/Punk_death.png-8cdff315a588b7d11d52533eceb10484.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_death.png"
+dest_files=["res://.godot/imported/Punk_death.png-d53f7e7cc652777124a2ecea9d0af50f.ctex"]
 
 [params]
 

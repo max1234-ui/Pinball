@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnhbovlof0b1v"
-path="res://.godot/imported/HURT.png-81df5f85b68bf808175fed9929fbca7f.ctex"
+path="res://.godot/imported/HURT.png-5dfd09bd86ea29b414f3b2ce20e58996.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT.png"
-dest_files=["res://.godot/imported/HURT.png-81df5f85b68bf808175fed9929fbca7f.ctex"]
+source_file="res://assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT.png"
+dest_files=["res://.godot/imported/HURT.png-5dfd09bd86ea29b414f3b2ce20e58996.ctex"]
 
 [params]
 

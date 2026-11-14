@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfbrjkde57ovr"
-path="res://.godot/imported/Biker_attack2.png-ebd2c41ab984651d644ce82ca1aaeb7b.ctex"
+path="res://.godot/imported/Biker_attack2.png-2e0615fdd58cfe6989a61107bdf1fc25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_attack2.png"
-dest_files=["res://.godot/imported/Biker_attack2.png-ebd2c41ab984651d644ce82ca1aaeb7b.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_attack2.png"
+dest_files=["res://.godot/imported/Biker_attack2.png-2e0615fdd58cfe6989a61107bdf1fc25.ctex"]
 
 [params]
 

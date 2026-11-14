@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1j7acfgik5su"
-path="res://.godot/imported/Cyborg_doublejump.png-d6fcdb17bf8c8dd6bb9d26273326cb94.ctex"
+path="res://.godot/imported/Cyborg_doublejump.png-667dee0e364eec1fffb14cb8ed8119fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_doublejump.png"
-dest_files=["res://.godot/imported/Cyborg_doublejump.png-d6fcdb17bf8c8dd6bb9d26273326cb94.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_doublejump.png"
+dest_files=["res://.godot/imported/Cyborg_doublejump.png-667dee0e364eec1fffb14cb8ed8119fe.ctex"]
 
 [params]
 

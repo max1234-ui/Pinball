@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0is61ceslq4t"
-path="res://.godot/imported/Punk_run.png-3eba0f00e0d8daf4d935a77eae6384e0.ctex"
+path="res://.godot/imported/Punk_run.png-d90486ca2383b895b4700c6506940911.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_run.png"
-dest_files=["res://.godot/imported/Punk_run.png-3eba0f00e0d8daf4d935a77eae6384e0.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/2 Punk/Punk_run.png"
+dest_files=["res://.godot/imported/Punk_run.png-d90486ca2383b895b4700c6506940911.ctex"]
 
 [params]
 

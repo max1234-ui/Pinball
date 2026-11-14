@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uqcvskufxoi3"
-path="res://.godot/imported/Biker_jump.png-f05ac0d6c9c3970db3f07c0412d11ec0.ctex"
+path="res://.godot/imported/Biker_jump.png-440e5d5af1659c4991b5d1480587b29e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_jump.png"
-dest_files=["res://.godot/imported/Biker_jump.png-f05ac0d6c9c3970db3f07c0412d11ec0.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/1 Biker/Biker_jump.png"
+dest_files=["res://.godot/imported/Biker_jump.png-440e5d5af1659c4991b5d1480587b29e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du80wbaf0be5n"
-path="res://.godot/imported/Card.png-68b31f91912e85e20f4cad782bf9e66d.ctex"
+path="res://.godot/imported/Card.png-06f8fafb02e8e56cadb6f4f9c20c3b41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Card.png"
-dest_files=["res://.godot/imported/Card.png-68b31f91912e85e20f4cad782bf9e66d.ctex"]
+source_file="res://assets/Power-Station-Free-Tileset-Pixel-Art/4 Animated objects/Card.png"
+dest_files=["res://.godot/imported/Card.png-06f8fafb02e8e56cadb6f4f9c20c3b41.ctex"]
 
 [params]
 

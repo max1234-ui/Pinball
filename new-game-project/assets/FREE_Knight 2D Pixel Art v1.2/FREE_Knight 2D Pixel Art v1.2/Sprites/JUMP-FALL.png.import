@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvaf4qxalav1w"
-path="res://.godot/imported/JUMP-FALL.png-7502f0625abb77e493dbc0051677e758.ctex"
+path="res://.godot/imported/JUMP-FALL.png-ce13f8eef36c65f2cb302ce19a1ca556.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/JUMP-FALL.png"
-dest_files=["res://.godot/imported/JUMP-FALL.png-7502f0625abb77e493dbc0051677e758.ctex"]
+source_file="res://assets/FREE_Knight 2D Pixel Art v1.2/FREE_Knight 2D Pixel Art v1.2/Sprites/JUMP-FALL.png"
+dest_files=["res://.godot/imported/JUMP-FALL.png-ce13f8eef36c65f2cb302ce19a1ca556.ctex"]
 
 [params]
 

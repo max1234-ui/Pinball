@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxxgwyvxuq6my"
-path="res://.godot/imported/Cyborg_hurt.png-756b39b17fb4bf4d98f49c01143d23b4.ctex"
+path="res://.godot/imported/Cyborg_hurt.png-166e28e1c6001608c109453804172a21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_hurt.png"
-dest_files=["res://.godot/imported/Cyborg_hurt.png-756b39b17fb4bf4d98f49c01143d23b4.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_hurt.png"
+dest_files=["res://.godot/imported/Cyborg_hurt.png-166e28e1c6001608c109453804172a21.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw73m7dfrfcrc"
-path="res://.godot/imported/Cyborg_run_attack.png-5be9f0b2806f7a6ab01360a7e8d006b6.ctex"
+path="res://.godot/imported/Cyborg_run_attack.png-0e2f495e45e42e85246b87e35141deca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_run_attack.png"
-dest_files=["res://.godot/imported/Cyborg_run_attack.png-5be9f0b2806f7a6ab01360a7e8d006b6.ctex"]
+source_file="res://assets/Free 3 Cyberpunk Sprites Pixel Art/3 Cyborg/Cyborg_run_attack.png"
+dest_files=["res://.godot/imported/Cyborg_run_attack.png-0e2f495e45e42e85246b87e35141deca.ctex"]
 
 [params]
 
