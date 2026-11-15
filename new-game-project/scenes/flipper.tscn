@@ -18,3 +18,4 @@ texture = ExtResource("1_q2nta")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=948235952]
 shape = SubResource("ConvexPolygonShape2D_lf8ub")
+metadata/bounciness = 30.0

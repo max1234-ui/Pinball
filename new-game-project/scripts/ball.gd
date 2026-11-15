@@ -57,7 +57,7 @@ func _physics_process(delta: float) -> void:
 	elif "flipping" in collider:
 		if collider.flipping:
 			var surface_vel = collision.get_collider_velocity()
-			velocity = (velocity - surface_vel).bounce(normal) + surface_vel * collider.bounciness + Vector2(randf_range(-0.01, 0.01), randf_range(-0.01, 0.01))
+			velocity = (velocity - surface_vel).bounce(normal) * 2 + surface_vel * 2 + Vector2(randf_range(-0.01, 0.01), randf_range(-0.01, 0.01))
 		else:
 			velocity = velocity.slide(normal)
 		return

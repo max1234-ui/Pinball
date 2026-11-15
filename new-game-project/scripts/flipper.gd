@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var rest_angle := 55.0
 var active_angle := -30.0
-var flip_speed := 1200.0
+var flip_speed := 800.0
 var bounciness := 0.4
 
 var flipping := false
