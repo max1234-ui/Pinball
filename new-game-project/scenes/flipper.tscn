@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://yeexhhvmuqjj"]
 
-[ext_resource type="Script" uid="uid://b6jdi7epcdrak" path="res://scenes/flipper.gd" id="1_j537t"]
-[ext_resource type="Texture2D" uid="uid://bso3sj1sg46f2" path="res://assets/aseprite/slingshot.png" id="1_q2nta"]
+[ext_resource type="Script" uid="uid://b6jdi7epcdrak" path="res://scripts/flipper.gd" id="1_j537t"]
+[ext_resource type="Texture2D" uid="uid://h7prugt1ycl8" path="res://assets/aseprite/flipper.png" id="1_q2nta"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_lf8ub"]
 points = PackedVector2Array(-4, -8, 6, -8, 20, -7, 23, -6, 25, -4, 25, -1, 23, 1, 19, 3, 10, 6, 8, 7, 5, 8, -4, 8, -7, 5, -7, -5)
