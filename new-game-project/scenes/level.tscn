@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c8j40p6x1kf80" path="res://scenes/spring.tscn" id="5_ppgk2"]
 [ext_resource type="PackedScene" uid="uid://yeexhhvmuqjj" path="res://scenes/flipper.tscn" id="7_klq6b"]
 [ext_resource type="PackedScene" uid="uid://cgh4c5vyljwds" path="res://scenes/gwendal.tscn" id="8_b121j"]
+[ext_resource type="Script" uid="uid://8behmbfk121h" path="res://scripts/hud.gd" id="9_8c41q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w8frs"]
 resource_name = "Normal"
@@ -275,8 +276,18 @@ rotation = -0.9599311
 scale = Vector2(-1, 1)
 
 [node name="gwendal" parent="." unique_id=1239102229 instance=ExtResource("8_b121j")]
-position = Vector2(-51.428577, -128.57143)
-scale = Vector2(0.37216508, 0.25303197)
+position = Vector2(-60, -127.14285)
+scale = Vector2(0.15, 0.15)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1499544452]
+script = ExtResource("9_8c41q")
+
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=1406771891]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 81.0
+offset_bottom = 39.0
+text = "Score : 0"
 
 [connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="CharacterBody2D" method="_on_body_exited"]

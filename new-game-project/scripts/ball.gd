@@ -74,4 +74,4 @@ func _get_eaten(normal: Vector2) -> void:
 	velocity = spit_velocity
 	$CollisionShape2D.set_deferred("disabled", false)
 	show()
-	set_physics_process(true)
+	set_physics_process(true)	
