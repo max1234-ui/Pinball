@@ -267,11 +267,11 @@ position = Vector2(102.85714, 212.85715)
 scale = Vector2(0.80215275, 1.4346917)
 
 [node name="FlipperLeft" parent="." unique_id=2102207556 instance=ExtResource("7_klq6b")]
-position = Vector2(-45.714283, 224.28572)
+position = Vector2(-43, 220)
 rotation = 0.9599311
 
 [node name="FlipperRight" parent="." unique_id=1470312095 instance=ExtResource("7_klq6b")]
-position = Vector2(12.857143, 224.28572)
+position = Vector2(12.857, 220)
 rotation = -0.9599311
 scale = Vector2(-1, 1)
 
