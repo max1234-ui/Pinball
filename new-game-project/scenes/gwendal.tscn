@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cgh4c5vyljwds"]
 
 [ext_resource type="Texture2D" uid="uid://wewt3eqnh1tl" path="res://assets/gwendal miam (1).png" id="1_aagtf"]
+[ext_resource type="Script" uid="uid://biqunwo3ubpgx" path="res://scripts/gwendal.gd" id="1_x3uyc"]
 [ext_resource type="Texture2D" uid="uid://18lvhuv1jast" path="res://assets/gwendal miam (2).png" id="2_bv4ii"]
 [ext_resource type="AudioStream" uid="uid://d2nrei5lnwocn" path="res://assets/sounds/eating.ogg" id="3_bv4ii"]
 
@@ -22,10 +23,11 @@ animations = [{
 radius = 40.0
 
 [node name="gwendal" type="StaticBody2D" unique_id=1239102229]
+script = ExtResource("1_x3uyc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=513885573]
 sprite_frames = SubResource("SpriteFrames_xlqkt")
-frame_progress = 0.12043724
+frame_progress = 0.086090244
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2121096818]
 position = Vector2(-13, 57)
