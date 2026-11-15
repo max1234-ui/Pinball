@@ -80,6 +80,8 @@ func _get_eaten(normal: Vector2) -> void:
 	set_physics_process(false)
 	hide()
 	$CollisionShape2D.set_deferred("disabled", true)
+	
+	modulate = Color(randf(), randf(), randf(), 1)
 
 	await get_tree().create_timer(Gwendal.CHEW_TIME).timeout
 
