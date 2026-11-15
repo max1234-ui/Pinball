@@ -1,9 +1,21 @@
 extends CharacterBody2D
 
+var rest_angle := 55.0
+var active_angle := -30.0
+var flip_speed := 1200.0
+var bounciness := 0.4
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
+var flipping := false
 
 func _physics_process(delta: float) -> void:
-	pass
+	var action
+	var flipper_inverse: int = scale.x
+	if scale.x == 1.0:
+		action = "flipper_left"
+	else:
+		action = "flipper_right"
+	var pressed := Input.is_action_pressed(action)
+	var target := (active_angle if pressed else rest_angle) * flipper_inverse
+	rotation_degrees = move_toward(rotation_degrees, target, flip_speed * delta)
+	
+	flipping = pressed and not is_equal_approx(rotation_degrees, active_angle*flipper_inverse)

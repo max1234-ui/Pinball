@@ -23,6 +23,11 @@ func _on_body_exited(body: Node2D) -> void:
 		body.is_in_chute = false
 
 
+const SPEED = 300.0
+const JUMP_VELOCITY = -500.0
+var speed = 1
+
+
 func _physics_process(delta: float) -> void:
 	# TEMP: replace with flippers
 	if in_game:
@@ -44,11 +49,20 @@ func _physics_process(delta: float) -> void:
 			var value = data.get_custom_data("bounciness")
 			if value != null:
 				bounce = value
+				
 	elif collider is Gwendal:
 		if collider.hit():
 			_get_eaten(normal)
 			return
 		bounce = GWENDAL_BOUNCINESS
+		
+	elif "flipping" in collider:
+		if collider.flipping:
+			var surface_vel = collision.get_collider_velocity()
+			velocity = (velocity - surface_vel).bounce(normal) + surface_vel * collider.bounciness + Vector2(randf_range(-0.01, 0.01), randf_range(-0.01, 0.01))
+		else:
+			velocity = velocity.slide(normal)
+		return
 
 	if bounce > 0.0:
 		if bounce > BUMPER_THRESHOLD and velocity.length() > SOUND_MIN_SPEED:
