@@ -1,4 +1,7 @@
 extends CharacterBody2D
+@onready var bumper_sound: AudioStreamPlayer2D = $BumperSound
+
+
 
 var is_in_chute = false
 var in_game = false
@@ -36,5 +39,7 @@ func _physics_process(delta: float) -> void:
 			var data = collider.get_cell_tile_data(tile_pos)
 			if data:
 				bounce = data.get_custom_data("bounciness")
+				if bounce > 0:
+					bumper_sound.play()
 
 		velocity = velocity.bounce(collision.get_normal()) * bounce
