@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://yeexhhvmuqjj"]
+
+[ext_resource type="Script" uid="uid://b6jdi7epcdrak" path="res://scenes/flipper.gd" id="1_j537t"]
+[ext_resource type="Texture2D" uid="uid://bso3sj1sg46f2" path="res://assets/aseprite/slingshot.png" id="1_q2nta"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_lf8ub"]
+points = PackedVector2Array(-4, -8, 6, -8, 20, -7, 23, -6, 25, -4, 25, -1, 23, 1, 19, 3, 10, 6, 8, 7, 5, 8, -4, 8, -7, 5, -7, -5)
+
+[node name="Node2D" type="CharacterBody2D" unique_id=2102207556]
+collision_mask = 2
+script = ExtResource("1_j537t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1351789224]
+texture_filter = 1
+position = Vector2(9, 0)
+texture = ExtResource("1_q2nta")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=948235952]
+shape = SubResource("ConvexPolygonShape2D_lf8ub")

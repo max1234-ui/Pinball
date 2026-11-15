@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cupyerhyeiyue"]
 
-[ext_resource type="Script" uid="uid://dt8nxu4xv1382" path="res://scenes/ball.gd" id="1_cxlvu"]
+[ext_resource type="Script" uid="uid://dt8nxu4xv1382" path="res://scripts/ball.gd" id="1_cxlvu"]
 [ext_resource type="Texture2D" uid="uid://cxytxnyj2wv6" path="res://assets/aseprite/ball.png" id="2_cxlvu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xlqkt"]
 radius = 8.246211
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=398377075]
+collision_layer = 3
 script = ExtResource("1_cxlvu")
 metadata/_edit_group_ = true
 
