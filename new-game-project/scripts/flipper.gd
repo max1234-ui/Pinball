@@ -9,10 +9,11 @@ var flipping := false
 
 func _physics_process(delta: float) -> void:
 	var action
-	var flipper_inverse: int = scale.x
-	if scale.x == 1.0:
+	var flipper_inverse: int = 1
+	if scale.x > 0:
 		action = "flipper_left"
 	else:
+		flipper_inverse = -1
 		action = "flipper_right"
 	var pressed := Input.is_action_pressed(action)
 	var target := (active_angle if pressed else rest_angle) * flipper_inverse

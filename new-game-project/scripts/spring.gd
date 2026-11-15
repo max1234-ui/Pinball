@@ -24,9 +24,8 @@ func _process(_delta: float) -> void:
 func _on_animation_finished() -> void:
 	# Animation is done: shoot any ball that is waiting in the chute.
 	for node in get_parent().get_children():
-		if "is_in_chute" in node and node.is_in_chute and not node.in_game:
+		if "is_in_chute" in node and node.is_in_chute:
 			node.velocity.y = LAUNCH_VELOCITY
-			node.in_game = true
 	sprite.stop()
 	sprite.frame = 0
 	pressing = false

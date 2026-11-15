@@ -9,7 +9,6 @@ const GWENDAL_BOUNCINESS := 0.8
 const SPIT_OFFSET := 12.0
 
 var is_in_chute := false
-var in_game := false
 var dead := false
 
 
@@ -30,8 +29,7 @@ var speed = 1
 
 func _physics_process(delta: float) -> void:
 	# TEMP: replace with flippers
-	if in_game:
-		velocity.x += Input.get_axis("ui_left", "ui_right") * 600.0 * delta
+	velocity.x += Input.get_axis("ui_left", "ui_right") * 600.0 * delta
 	velocity += get_gravity() * delta
 
 	var collision := move_and_collide(velocity * delta)
@@ -74,7 +72,7 @@ func _physics_process(delta: float) -> void:
 
 func _get_eaten(normal: Vector2) -> void:
 	var spit_pos := global_position + normal * SPIT_OFFSET
-	var spit_velocity := velocity.bounce(normal) * GWENDAL_BOUNCINESS
+	var spit_velocity := velocity * Vector2(-0.8, -1) * GWENDAL_BOUNCINESS
 
 	# vanish: no physics, no collision, invisible
 	set_physics_process(false)
